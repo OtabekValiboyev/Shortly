@@ -179,3 +179,47 @@ img {
   color: var(--text-color);
   margin-right: 37px;
 }
+
+/* SITE-HERO  */
+.hero {
+  position: relative;
+  padding-top: 91px;
+  padding-bottom: 222px;
+  background-color: #fff;
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__content {
+  max-width: 570px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--heading-color);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -2px;
+}
+
+.hero__text {
+  color: var(--text-color);
+  font-size: 22px;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.hero__img {
+  top: 0;
+  left: calc(50% + 102px);
+  position: absolute;
+}
