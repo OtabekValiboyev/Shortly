@@ -1,3 +1,31 @@
+/* CUSTOM PROPS */
+:root {
+  --text-color: #9e9aa8;
+  --tetx-color-dark: #bfbfbf;
+  --heading-color: #34313d;
+  --accent-bg-color: #2bd0d0;
+
+}
+
+/* FONTS  */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../Fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../Fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../Fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../Fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -16,16 +44,19 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  font-size: 15px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 .container {
   max-width: 100%;
-  width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
