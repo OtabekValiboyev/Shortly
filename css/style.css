@@ -59,6 +59,15 @@ body {
   overflow-x: hidden;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+}
+
 
 /* INPUT-PLACEHOLDER */
 ::-webkit-input-placeholder {
@@ -354,6 +363,14 @@ img {
 }
 
 /* SHORTENER-RESULT */
+.shortener__result {
+  display: none;
+}
+
+.shortener__result--open {
+  display: block;
+}
+
 .shortener__result-inner {
   display: flex;
   padding: 16px 24px;
