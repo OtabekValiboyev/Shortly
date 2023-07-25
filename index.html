@@ -50,19 +50,34 @@
     <!-- INDEX-SHORTENER-FEATURE-WRAPPER -->
     <section class="index-shortener-feature-wrapper">
       <!-- INDEX-SHORTENER -->
-      <div class="index-shortener">
-        <div class="shortener container">
+      <div class="index-shortener container">
+        <div class="shortener">
           <h2 class="visually-hidden">SITE SHORT IT</h2>
           <form class="shortener__form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="shortener__input-wrapper">
-              <input class="sortener__input" type="url" name="site search key" placeholder="Shorten a link here..." aria-label="site-search-input">
+              <input class="shortener__input" type="url" name="site-search-key" placeholder="Shorten a link here..." aria-label="site-search-input" required>
               <div class="shortener__error-msg">Please add a link</div>
             </div>
-            <button class="button button-rectangle" type="button">Shorten It!</button>
+            <button class="button button-rectangle" type="submit">Shorten It!</button>
           </form>
         </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet itaque ducimus. Nihil voluptate laborum omnis culpa natus eum odit, ipsum architecto optio, eius dicta, ratione impedit tenetur quae distinctio!
+        <!-- SHORTENER-RESULT -->
+        <div class="shortener__result">
+          <div class="shortener__result-inner">
+            <div class="shortener__result-origin-text">https://www.frontendmentor.io</div>
+            <a class="shortener__result-short-link" href="#">https://rel.ink/k4lKyk</a>
+            <button class="button button-rectangle-small" type="button">Copy</button>
+          </div>
+          <div class="shortener__result-inner">
+            <div class="shortener__result-origin-text">https://twitter.com/frontendmentor</div>
+            <a class="shortener__result-short-link" href="#">https://rel.ink/gxOXp9</a>
+            <button class="button button-rectangle-small" type="button">Copy</button>
+          </div>
+          <div class="shortener__result-inner">
+            <div class="shortener__result-origin-text">https://www.linkedin.com/company/frontend-mentor</div>
+            <a class="shortener__result-short-link" href="#">https://rel.ink/gob3X9</a>
+            <button class="button button-rectangle-small" type="button">Copy</button>
+          </div>
         </div>
       </div>
     </section>
