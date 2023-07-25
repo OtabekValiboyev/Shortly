@@ -4,6 +4,7 @@
   --tetx-color-dark: #bfbfbf;
   --heading-color: #34313d;
   --accent-bg-color: #2bd0d0;
+  --error-color: #f46363;
 
 }
 
@@ -38,6 +39,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 3px dashed var(--accent-bg-color);
+  outline-offset: 5px;
+}
+
 body {
   height: 100%;
   display: flex;
@@ -50,6 +56,53 @@ body {
   font-size: 15px;
   background-color: #fff;
   color: var(--text-color);
+  overflow-x: hidden;
+}
+
+
+/* INPUT-PLACEHOLDER */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgba(52, 49, 61, 0.5);
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(52, 49, 61, 0.5);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(52, 49, 61, 0.5);
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(52, 49, 61, 0.5);
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -70,9 +123,9 @@ img {
   flex-grow: 1;
 }
 
+
+/* SITE-BUTTON */
 .button {
-  text-transform: capitalize;
-  text-decoration: none;
   padding: 14px 40px 12px;
   border-radius: 28px;
   background-color: var(--accent-bg-color);
@@ -81,6 +134,11 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -219,7 +277,62 @@ img {
 }
 
 .hero__img {
+  position: absolute;
   top: 0;
   left: calc(50% + 102px);
-  position: absolute;
+}
+
+/* INDEX-SHORTENER-FEATURE-WRAPPER */
+.index-shortener-feature-wrapper {
+  background-color: #eff1f7;
+}
+
+.index-shortener {
+  margin-top: -84px;
+}
+
+.shortener {
+  /* transform: translateY(-50%); */
+  border-radius: 10px;
+  background-color: #3a3054;
+  background-image: url(../img/shortener-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 52px 64px;
+  margin-bottom: 24px;
+}
+
+.shortener__form {
+  display: flex;
+}
+
+.shortener__input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.sortener__input {
+  flex-grow: 1;
+  border-radius: 10px;
+  width: 100%;
+  padding: 14px 32px;
+}
+
+.shortener__error-msg {
+  display: none;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .shortener {
+    background-image: url(../img/shortener-bg@2x.png);
+  }
 }

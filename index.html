@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- SITE-HEADER  -->
@@ -19,11 +21,11 @@
         <img class="header__logo-img" src="img/header-logo.svg" alt="site-logo" width="120" height="32" srcset="">
       </a>
       <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item"><a href="#" class="sitenav__link">Features</a></li>
-            <li class="sitenav__item"><a href="#" class="sitenav__link">Pricing</a></li>
-            <li class="sitenav__item"><a href="#" class="sitenav__link">Resources</a></li>
-          </ul>
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Features</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Pricing</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Resources</a></li>
+        </ul>
       </nav>
       <a class="header__login" href="#">Login</a>
       <a class="button button-small" href="#">Sign Up</a>
@@ -31,17 +33,41 @@
   </header>
 
   <main class="main-content">
+    <!-- SITE-HERO -->
     <section class="hero">
       <div class="hero__container container">
         <div class="hero__content">
           <h2 class="hero__heading">More than just shorter links</h2>
-          <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+          <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are
+            performing.</p>
           <a class="button" href="#">Get Started</a>
         </div>
-        <img class="hero__img" src="img/working_with_computer.png" alt="working with kompyuter" width="733" height="482" srcset="img/working_with_computer.png 1x, img/working_with_computer@2x.png 2x">
+        <img class="hero__img" src="img/working_with_computer.png" alt="working with kompyuter" width="733" height="482"
+          srcset="img/working_with_computer.png 1x, img/working_with_computer@2x.png 2x">
+      </div>
+    </section>
+
+    <!-- INDEX-SHORTENER-FEATURE-WRAPPER -->
+    <section class="index-shortener-feature-wrapper">
+      <!-- INDEX-SHORTENER -->
+      <div class="index-shortener">
+        <div class="shortener container">
+          <h2 class="visually-hidden">SITE SHORT IT</h2>
+          <form class="shortener__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="shortener__input-wrapper">
+              <input class="sortener__input" type="url" name="site search key" placeholder="Shorten a link here..." aria-label="site-search-input">
+              <div class="shortener__error-msg">Please add a link</div>
+            </div>
+            <button class="button button-rectangle" type="button">Shorten It!</button>
+          </form>
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet itaque ducimus. Nihil voluptate laborum omnis culpa natus eum odit, ipsum architecto optio, eius dicta, ratione impedit tenetur quae distinctio!
+        </div>
       </div>
     </section>
   </main>
 
 </body>
+
 </html>
