@@ -59,6 +59,8 @@ body {
   overflow-x: hidden;
 }
 
+
+/* AUTOFILL-STYLES */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 50px white inset;
   /* Change the color to your own background color */
@@ -509,6 +511,34 @@ img {
   margin: 0;
 }
 
+
+
+/* CTA  */
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-image: url(../img/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.cta__heading {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
