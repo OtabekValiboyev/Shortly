@@ -13,8 +13,12 @@ if (elShortenerForm) {
 if (elIndexShortener) {
   elIndexShortener.addEventListener('click', function (evt) {
     if (evt.target.matches('.js-copy-short-link-button')) {
+
       evt.target.textContent = 'Copied!';
+
       evt.target.classList.add('shortener-copy-link-bg');
+
+      navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
 
       setTimeout(function () {
         evt.target.textContent = 'Copy!';
